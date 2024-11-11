@@ -409,6 +409,10 @@ size = Vector2(13, 26)
 
 [node name="MainCharacter" type="CharacterBody2D" groups=["player"]]
 disable_mode = 1
+collision_layer = 5
+collision_mask = 11
+platform_floor_layers = 4294967043
+platform_wall_layers = 3
 
 [node name="MainCharacterMovement" type="Node2D" parent="." node_paths=PackedStringArray("character", "main_animation", "effect_animation_sword", "audio_player")]
 script = ExtResource("7_fm4k8")
@@ -449,6 +453,8 @@ frame = 3
 frame_progress = 1.0
 
 [node name="AreaSword" type="Area2D" parent="." groups=["hit"]]
+collision_layer = 4
+collision_mask = 8
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="AreaSword"]
 position = Vector2(21.5, 6)

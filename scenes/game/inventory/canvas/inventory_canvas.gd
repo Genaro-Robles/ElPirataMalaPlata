@@ -40,17 +40,15 @@ func _unhandled_input(event):
 	if scenes.find(actual_scene,0) > -1:
 		return
 	
-	if event.is_action_pressed("wheel_up"):
-		# Cuando deslizamos la rueda del ratón hacia arriba, ocultamos el inventario
-		animation_player.play_backwards("down")
-		await animation_player.animation_finished
-		canvas.visible = false
-		get_tree().paused = false
-	elif event.is_action_pressed("wheel_down"):
-		get_tree().paused = true
-		# Cuando deslizamos la rueda del ratón hacia abajo, mostramos el inventario
+	if event.is_action_pressed("wheel_down"):
 		if canvas.visible == true:
+			animation_player.play_backwards("down")
+			get_tree().paused = false
+			await animation_player.animation_finished
+			canvas.visible = false
 			return
+		# Cuando deslizamos la rueda del ratón hacia abajo, mostramos el inventario
+		get_tree().paused = true
 		canvas.visible = true
 		animation_player.play("down")
 		await animation_player.animation_finished

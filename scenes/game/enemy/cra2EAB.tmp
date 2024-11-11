@@ -210,8 +210,8 @@ func _on_enemy_animation_frame_changed():
 		if HealthDashboard.life > 0:
 			# Reproducimos sonido
 			#_audio_player.stream = _male_hurt_sound
-			#_audio_player.play()
-			return
+			_audio_player.play()
+			
 		else:
 			_animation.play(\"idle\")
 			_animation_effect.play(\"idle\")

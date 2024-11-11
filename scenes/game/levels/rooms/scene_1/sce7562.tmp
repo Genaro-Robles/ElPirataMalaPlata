@@ -210,10 +210,14 @@ animation = "blue_diamond"
 position = Vector2(132, 435)
 animation = "green_diamond"
 
+[node name="Crabby" parent="." instance=ExtResource("18_dyrn2")]
+position = Vector2(1047, 463)
+platform_floor_layers = 4294967041
+animation = "run"
+moving_direction = "right"
+
 [node name="Cannon" parent="." instance=ExtResource("19_msljc")]
 position = Vector2(797, 340)
-collision_layer = 8
-collision_mask = 5
 
 [node name="BombShop" parent="." instance=ExtResource("21_sh538")]
 position = Vector2(1149, 460)
@@ -240,15 +244,3 @@ character = NodePath("../MainCharacter")
 [node name="PowerUp" parent="." instance=ExtResource("22_vr6n4")]
 position = Vector2(195, 436)
 animation = &"green_bottle"
-
-[node name="Crabby" parent="." instance=ExtResource("18_dyrn2")]
-position = Vector2(1079, 466)
-platform_floor_layers = 4294967043
-animation = "run"
-moving_direction = "right"
-
-[node name="Crabby2" parent="." instance=ExtResource("18_dyrn2")]
-position = Vector2(279, 497)
-collision_layer = 8
-animation = "run"
-moving_direction = "right"

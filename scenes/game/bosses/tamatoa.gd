@@ -28,7 +28,7 @@ extends CharacterBody2D
 
 # Definimos sonidos
 var _punch_sound = preload("res://assets/sounds/punch.mp3")
-#var _male_hurt_sound = preload("res://assets/sounds/male_hurt.mp3")
+var _male_hurt_sound = preload("res://assets/sounds/male_hurt.mp3")
 
 # Definición de parametros de física
 var _gravity = 10
@@ -105,6 +105,7 @@ func _on_area_2d_body_entered(body):
 	# Validamos si la colición es con el personaje principal
 	if body.is_in_group("player"):
 		_stop_detection = true
+		print("Ataque jefe")
 		# Atacamos
 		_attack()
 		# Creamos la copia de objeto
@@ -139,6 +140,7 @@ func _attack():
 		
 	# Animación de atacar
 	_animation.play("attack")
+	print("ataque jefe _attack")
 
 
 func _init_state():

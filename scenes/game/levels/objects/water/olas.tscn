@@ -1,0 +1,35 @@
+[gd_scene load_steps=7 format=3 uid="uid://dla6ee8ro8xyw"]
+
+[ext_resource type="Script" path="res://scenes/game/levels/objects/water/olas.gd" id="1_vhs68"]
+[ext_resource type="Texture2D" uid="uid://dos7c2tlkqet2" path="res://scenes/game/levels/objects/water/water_1.png" id="1_ylpqy"]
+[ext_resource type="Texture2D" uid="uid://cd7tsuby8mcqd" path="res://scenes/game/levels/objects/water/water_2.png" id="2_278xb"]
+[ext_resource type="Texture2D" uid="uid://ch18j2vosdfwc" path="res://scenes/game/levels/objects/water/water_3.png" id="3_ddf2i"]
+[ext_resource type="Texture2D" uid="uid://70off552w6d2" path="res://scenes/game/levels/objects/water/water_4.png" id="4_p2r4i"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_lctkc"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_ylpqy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_278xb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_ddf2i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_p2r4i")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[node name="Olas" type="Node2D" node_paths=PackedStringArray("main_animation")]
+script = ExtResource("1_vhs68")
+main_animation = NodePath("default")
+
+[node name="default" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_lctkc")
+frame_progress = 0.290441
