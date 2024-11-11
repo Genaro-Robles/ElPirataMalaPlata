@@ -65,8 +65,11 @@ func add_points(type: String, value: int, group = null):
 		_number_2 = group.find_child("Number2")
 		_number_3 = group.find_child("Number3")
 		# Guardamos la puntuación correspondiente
+		if points["GoldCoin"] == 5:
+			Global.ora_ora = true
 		points[type] += value
 		_set_points(points[type])
+		
 
 
 # Permite sumar o restar la cantidad de bombas disponibles

@@ -143,7 +143,7 @@ func _set_animation():
 		_play_sound(_hit_sound)
 		# Agregamos el effecto especial
 		_play_sword_effect()
-	elif _current_movement == _movements.ORA:
+	elif _current_movement == _movements.ORA && Global.ora_ora:
 		# Atacamos
 		attacking = true
 		main_animation.play(_movements.ORA)

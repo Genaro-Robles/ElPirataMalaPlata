@@ -72,6 +72,7 @@ func do_animation():
 		type = "RedDiamond"
 	# Todos los diferente tipos de objetos suman 1 unidad
 	HealthDashboard.add_points(type, 1) 
+	if(HealthDashboard.)
 
 
 func _on_area_entered(area):

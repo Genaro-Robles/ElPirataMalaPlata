@@ -9,3 +9,6 @@ var attack_effect = "normal"
 
 # Numero de ataques disponibles
 var number_attack = 0
+
+# ORA ORA
+var ora_ora = false
