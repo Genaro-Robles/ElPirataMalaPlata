@@ -94,8 +94,9 @@ position = Vector2(732, 328)
 speed_scale = 2.0
 
 [node name="Candle3" parent="Node2D" instance=ExtResource("4_jd20g")]
-position = Vector2(553, 394)
+position = Vector2(558, 390)
 speed_scale = 2.0
+metadata/_edit_group_ = true
 
 [node name="Candle4" parent="Node2D" instance=ExtResource("4_jd20g")]
 position = Vector2(1227, 398)
@@ -290,8 +291,3 @@ position = Vector2(1308, 405)
 [node name="PowerUp" parent="." instance=ExtResource("23_0b467")]
 position = Vector2(847, 163)
 animation = &"green_bottle"
-
-[node name="DieArea" type="Node2D" parent="."]
-
-[node name="Death" parent="DieArea" instance=ExtResource("9_2w7rh")]
-position = Vector2(780, 588)
