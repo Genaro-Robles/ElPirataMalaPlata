@@ -210,7 +210,7 @@ texture = ExtResource("11_4ker5")
 [node name="DieArea" type="Node2D" parent="."]
 
 [node name="Death" parent="DieArea" instance=ExtResource("16_kwprd")]
-position = Vector2(247, 668)
+position = Vector2(196, 658)
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 

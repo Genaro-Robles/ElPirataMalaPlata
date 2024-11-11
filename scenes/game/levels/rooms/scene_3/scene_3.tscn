@@ -213,3 +213,8 @@ sprite_frames = SubResource("SpriteFrames_pmkhs")
 frame_progress = 0.770145
 speed_scale = 2.0
 script = ExtResource("25_prflw")
+
+[node name="DieArea" type="Node2D" parent="."]
+
+[node name="Death" parent="DieArea" instance=ExtResource("10_lf4gu")]
+position = Vector2(302, 630)
